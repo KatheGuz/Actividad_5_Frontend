@@ -1,0 +1,74 @@
+html {
+    box-sizing: border-box;
+}
+
+/*El selector * es universal y da propiedad a todos los elementos del 
+HTML de la página,afectando a todos los elementos HTML de la página*/
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    /*La propiedad anterior box-sizing nos permite incluir el relleno
+    y el borde en el ancho y alto total de un elemento*/
+}
+
+body {
+    font: 1.2em/1.2 Helvetica, aria, sans-serif;
+    margin: 0 3%;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin: .9em 0 0 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 1.5em 0 0 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    background: #383636;
+    border-radius: 5px;
+    color: #ffffff;
+    margin: 0 0 25px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+figcaption {
+    font-size: .8em;
+}
+
+/*La @media permite aplicar estilos CSS según el tipo general de un dispositivo(como impresión 
+o pantalla) u otras características,usándolo para el responsive design y en este caso se ejecuta
+ según los tamaños de pantalla definidos en la siguiente regla*/
+@media screen and (min-width: 794px) {
+    body {
+        background: #0000ff33;
+        margin: 0 3%;
+    }
+
+    figure {
+        float: left;
+        width: 45%;
+        margin-right: 4.5%;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    body {
+        background: #00ff0033;
+        margin: 25px 10%;
+        max-width: 1130px;
+    }
+
+    figure {
+        width: 30%;
+        margin-right: 2.5%;
+    }
+}

@@ -1,0 +1,28 @@
+body {
+    background: url('../img/fondo.webp') no-repeat;
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-color: #0CF;
+}
+
+button {
+    background-color: #CC0066;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
